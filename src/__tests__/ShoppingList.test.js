@@ -30,7 +30,7 @@ test("displays all the items from the server after the initial render", async ()
   expect(lettuce).toBeInTheDocument();
 });
 
-test("adds a new item to the list when the ItemForm is submitted", async () => {
+test("adds   a new item to the list when the ItemForm is submitted", async () => {
   const { rerender } = render(<ShoppingList />);
 
   const dessertCount = screen.queryAllByText(/Dessert/).length;
